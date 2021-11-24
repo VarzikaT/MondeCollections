@@ -1066,3 +1066,8 @@ th:last-child {
     display: none;
   }
 }
+
+
+a:hover {
+  background-color: rgb(177, 175, 189);
+}
