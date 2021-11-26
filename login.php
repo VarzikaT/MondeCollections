@@ -1,7 +1,7 @@
 <?php 
-
-$num=$_POST['name'];
-$pass=$_POST['password'];
+if(isset($_POST['submit'])){
+$num=$_POST['userid'];
+$pass=$_POST['pass'];
 
 session_start();
 $connection = mysqli_connect('localhost','root','','mydata');
@@ -12,12 +12,13 @@ if(mysqli_num_rows($data)>0)
 {
 	while($row=mysqli_fetch_array($data))
 	{
-		if($row['name']==$num && $row['password']==$pass)
+		if($row['UserID']==$num && $row['Password']==$pass)
 		{
 			echo "home page";
 			break;
 		}
 		
 	}
+}
 }
 ?>
