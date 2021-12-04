@@ -13,7 +13,7 @@
 		}	
 		$rs="INSERT INTO signup(Name,EmailID,Phone,UserID,Password) VALUES('$var','$email','$phone','$u','$pass')";
 		if(mysqli_query($connection,$rs)){
-			header("location:index.html");
+			header("location:./login.html");
 		}
 	}
     ?>

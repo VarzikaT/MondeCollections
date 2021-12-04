@@ -1,4 +1,4 @@
- <?php 
+<!--  
 // if(isset($_POST['submit'])){
 // $num=$_POST['userid'];
 // $pass=$_POST['pass'];
@@ -28,32 +28,37 @@
 // 	 }
 // 		}
 // 	}
-// }
-?>
+// } -->
 <?php
 
-$e = $_POST['UserID'];
-$pass = $_POST['Password'];
+$e = $_POST['Name'];
+$pass = $_POST['pass'];
 
 $connection = mysqli_connect('localhost',"root",'', "mydata");
 if(!$connection){
 	echo"error";
 }
 
-$fetch_query = "SELECT `pass` FROM `signup` WHERE `UserID`='$e' AND `Password` = '$pass'";
+$fetch_query = "SELECT `Password` FROM `signup` WHERE `UserID`='$e' AND `Password` = '$pass'";
 $data = mysqli_query($connection,$fetch_query);
-session_start();
-if (isset($_SESSION['UserID'])) {
-	echo '<script>alert("Login Success")</script>';
-	echo '<script>window.location.href="./index.php"</script>';
-}else{
+
+
 	if(mysqli_num_rows($data)>0){
-		$_SESSION['UserID'] = $e;
-		header("location:./index.html");
+		session_start();
+		if (isset($_SESSION['UserID'])) 
+		{
+			echo '<script>alert("Login Success")</script>';
+			echo '<script>window.location.href="./index.html"</script>';
+		}
+		else 
+		{
+			$_SESSION['UserID'] = $e;
+			header("location:./login.php");
+		}
 	}
 	else{
-		echo '<script>alert("User Not Found")</script>';
-		echo '<script>window.location.href="./index.html"</script>';
+		echo '<script>alert("Invalid ID or Password")</script>';
+		echo '<script>window.location.href="./login.html"</script>';
 	}
-}
+
 ?> 

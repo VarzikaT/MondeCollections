@@ -13,22 +13,22 @@
     <form action="signup.php" method="POST">
         
      <div class="cont" >
-        <label for="first-name" class="hi"> Name:&nbsp;&nbsp;</label>
-        <input type="text" id="fname" name="fname"><br><br>
-        <label for="mail-id" class="hi">Email ID:&nbsp;&nbsp;</label>
-        <input type="email" id="mailid" name="email"><br><br>
+        <label for="fname" class="hi"> Name:&nbsp;&nbsp;</label>
+        <input type="text" id="fname" name="fname" required><br><br>
+        <label for="mailid" class="hi">Email ID:&nbsp;&nbsp;</label>
+        <input type="email" id="mailid" name="email" required><br><br>
         <label for="phone" class="hi">Phone-Number:</label>
         <input type="tel" id="phone" name="telp" required><br><br>
-        <label for="ext" class="hi">User ID:&nbsp;&nbsp;&nbsp;&nbsp;</label>
-        <input type="text" id="pass" name="user"><br><br>
+        <label for="udi" class="hi">User ID:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" id="udi" name="user" required><br><br>
         <label for="pass" class="hi">Password:</label>
-        <input type="password" id="pass" name="pass1"><br><br>
+        <input type="password" id="pass" name="pass1" required><br><br>
         <input type="checkbox" class="checkbox" id="notification">
         <label for="notification">recieve upcoming offers and events mails</a></label><br>
-        <input type="checkbox" checked class="checkbox" id="terms-and-cond">
+        <input type="checkbox" class="checkbox" id="terms-and-cond">
         <label for="terms-and-cond">agree to our <a href="">terms and conditions</a></label>
         <br>
-        <br> <button type="submit" name="submit" style="color: rgb(0, 0, 0);">Submit</button>
+        <br> <button type="submit" name="submit">Submit</button>
     </div>
         </form>
    
