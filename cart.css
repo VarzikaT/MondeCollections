@@ -3,18 +3,14 @@ body{
 	padding: 0;
 	background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
 	height: 100vh;
-	display: inline-table
+	display: inline-table;
 	justify-content: center;
 	align-items: center;
-	color: #243a6f;
-	font-family: "Poppins", sans-serif;
-	font-size: 1.1rem;
-	font-weight: 400;
 }
 
 .CartContainer{
 	width: 70%;
-	height: 80%;
+	height: 0%;
 	background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 0px 10px 20px #1687d933;
