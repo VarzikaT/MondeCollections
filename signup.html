@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/fontawesome/css/all.css" rel="stylesheet">
+    <link rel="Stylesheet" href="signup.css">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <div class="bg-image"></div>
+     <!-- Navigation Bar-->
+  <nav class="nav">
+    <div class="navigation container">
+      <div class="logo">
+        <h1>Monde</h1>
+      </div>
+
+      <div class="menu">
+        <div class="top-nav">
+          <div class="logo">
+            <h1>Monde</h1>
+          </div>
+          <div class="close">
+            <i class="bx bx-x"></i>
+          </div>
+        </div>
+
+        <ul class="nav-list">
+
+          
+          <li class="nav-item">
+            <a href="index.html" class="nav-link scroll-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="product.html" class="nav-link">Products</a>
+          </li>
+          <li class="nav-item">
+            <a href="aboutus.html" class="nav-link scroll-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="contactus.html" class="nav-link scroll-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="account.html" class="nav-link scroll-link">Account</a>
+          </li>
+          <li class="nav-item">
+            <a href="cart.html" class="nav-link icon"><i class="fas fa-cart-plus"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="login.html" class="nav-link scroll-link"><i class="far fa-user-circle fa-3x "></i></a>
+          </li>
+        </ul>
+      </div>
+      <!-- <a href="cart.html" class="cart-icon">
+        <i class="fas fa-cart-plus"></i>
+         
+        </a> -->
+
+        <div class="hamburger">
+          <i class="bx bx-menu"></i>
+        </div>
+      </div>
+    </nav>
+    
+    <form action="signup.php" method="POST">
+        
+     <div class="cont" >
+        <label for="fname" class="hi"> Name:&nbsp;&nbsp;</label>
+        <input type="text" id="fname" name="fname" required><br><br>
+        <label for="mailid" class="hi">Email ID:&nbsp;&nbsp;</label>
+        <input type="email" id="mailid" name="email" required><br><br>
+        <label for="phone" class="hi">Phone-Number:</label>
+        <input type="tel" id="phone" name="telp" required><br><br>
+        <label for="udi" class="hi">User ID:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" id="udi" name="user" required><br><br>
+        <label for="pass" class="hi">Password:</label>
+        <input type="password" id="pass" name="pass1" required><br><br>
+        <input type="checkbox" class="checkbox" id="notification">
+        <label for="notification">recieve upcoming offers and events mails</a></label><br>
+        <input type="checkbox" class="checkbox" id="terms-and-cond">
+        <label for="terms-and-cond">agree to our <a href="">terms and conditions</a></label>
+        <br>
+        <br> <button type="submit" name="submit">Submit</button>
+    </div>
+        </form>
+   
+
+     </body>
+</html>
+
+ <!-- <div class="hi" id="u"> -->

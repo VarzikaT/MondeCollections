@@ -1,0 +1,276 @@
+
+
+body {
+  
+  margin-right: 100px;
+	padding: 0;
+	background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+	height: 100vh;
+	display: block;
+	justify-content: center;
+	align-items: center;
+
+
+}
+
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+ .top {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+} 
+
+.middle{
+  border-radius: 0;
+  margin-bottom: -1px;
+
+}
+.bottom {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; 
+}
+
+/* nav */
+
+.nav {
+	padding: 1.2rem 7;
+  padding-bottom: 90px;
+
+	
+  }
+  
+  .nav.fix-nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #243a6f;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+	z-index: 999;
+  }
+  
+  .row video {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	z-index: -2
+  }
+  
+  .nav.fix-nav .nav-link,
+  .nav.fix-nav .logo,
+  .nav.fix-nav .cart-icon,
+  .nav.fix-nav .hamburger {
+	color: #fff;
+  }
+  
+  .navigation {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  }
+  
+  .logo h1 {
+	font-size: 2.5rem;
+  }
+  
+  .nav-list {
+	display: flex;
+	align-items: center;
+  }
+  
+  .nav-item:not(:last-child) {
+	margin-right: 0.5rem;
+  }
+  
+  .nav-link:link,
+  .nav-link:visited {
+	padding: 0.8rem 1rem;
+	transition: all 300ms ease-in-out;
+  }
+  
+  .nav-link.icon {
+	font-size: 3rem;
+  }
+  
+  .top-nav {
+	display: none;
+  }
+  
+  .hamburger {
+	display: none;
+  }
+  
+  .cart-icon {
+	display: none;
+  }
+  
+  @media only screen and (max-width: 768px) {
+	.menu {
+	  position: fixed;
+	  top: 0;
+	  left: -100%;
+	  width: 80%;
+	  max-width: 40rem;
+	  height: 100%;
+	  transition: all 500ms ease-in-out;
+	  z-index: 100;
+	}
+  
+	.row video {
+	  margin: 0;
+	  padding: 0;
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  object-fit: cover;
+	  width: 100%;
+	  height: 100%;
+	  z-index: -2
+	}
+	.menu.show {
+	  left: 0;
+	}
+  
+	.top-nav {
+	  display: flex;
+	  align-items: center;
+	  justify-content: space-between;
+	  background-color: #243a6f;
+	  padding: 1rem 1.6rem;
+	}
+  
+	.top-nav .logo {
+	  color: #fff;
+	}
+  
+	.top-nav .close {
+	  color: #fff;
+	  font-size: 3rem;
+	  padding: 1rem;
+	  cursor: pointer;
+	}
+  
+	.cart-icon {
+	  display: block;
+	  font-size: 3rem;
+	}
+  
+	.hamburger {
+	  display: block;
+	  font-size: 3rem;
+	  padding: 0.5rem;
+	  cursor: pointer;
+	}
+  
+	.nav-link:link,
+	.nav-link:visited {
+	  display: block;
+	  font-size: 1.7rem;
+	  padding: 1rem 0;
+	}
+  
+	.nav.fix-nav .nav-link {
+	  color: #243a6f;
+	}
+  
+	.nav-list {
+	  flex-direction: column;
+	  align-items: start;
+	  padding: 1rem 1.6rem;
+	}
+  
+	body.show::before {
+	  content: "";
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  height: 100%;
+	  /* background-color: rgba(0, 0, 0, 0.8); */
+	  z-index: 4;
+	}
+  
+	.nav.show {
+	  background-color: rgba(0, 0, 0, 0.8);
+	}
+  
+	.nav-link.icon {
+	  display: none;
+	}
+  }
+  li {
+	list-style: none;
+  }
+  
+  
+  
+  a:hover {
+	background-color: rgb(177, 175, 189);
+  }
+  
+  .header {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	overflow: hidden;
+  }
+  
+  a {
+	color: inherit;
+	text-decoration: none;
+  }
+  
+  .container {
+	padding: 0 16px;
+  }
+  
+  /* .container::after, .row::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+   */
+  
+   .container {
+	max-width: 120rem;
+	margin: 0 auto;
+  }
+  
+  .container-md {
+	max-width: 100rem;
+	margin: 0 auto;
+  }
+  
+  @media only screen and (max-width: 1200px) {
+	.container {
+	  padding: 0 3rem;
+	}
+  
+	.container-md {
+	  padding: 0 3rem;
+	}
+  }
